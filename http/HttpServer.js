@@ -61,6 +61,7 @@ var processRequest = (request, response) => {
 			response.writeHead(301, {
 				location: redirect
 			});
+			response.end();
 		}
 		pathName += "index.html";
 		hasExt = false;
